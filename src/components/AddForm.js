@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { addSmurf, setError } from "../actions"
 const initialValues = {
+    id: "",
     name: "",
     position: "",
     nickname: "",
@@ -28,6 +29,7 @@ const AddForm = (props) => {
             setState(initialValues)
             return(
                 props.addSmurf({
+                    id:state.id,
                     name: state.name,
                     position: state.position,
                     nickname: state.nickname,

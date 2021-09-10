@@ -9,7 +9,8 @@ export const initialState = {
     smurfs: [],
     isLoading: false,
     errorMessage: "",
-    dataError:""
+    dataError:"",
+    // id:""
 }
 
 const reducer = (state = initialState, action) => {
