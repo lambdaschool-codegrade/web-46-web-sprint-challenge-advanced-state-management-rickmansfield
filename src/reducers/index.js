@@ -1,5 +1,6 @@
 import {
-    START_FETCH_SMURF
+    START_FETCH_SMURF,
+    SET_VALUE_TO_ERROR_MESSAGE
 } from "../actions/"
 export const initialState = {
     smurfs: [],
@@ -7,15 +8,20 @@ export const initialState = {
     errorMessage: ""
 }
 
-const reducer = (state = initialState, action)=>{
-    switch(action.type){
+const reducer = (state = initialState, action) => {
+    switch (action.type) {
         case START_FETCH_SMURF:
-            return({
+            return ({
                 ...state,
                 isLoading: true
-            })
-            default:
-                return state;
+            });
+        case SET_VALUE_TO_ERROR_MESSAGE:
+            return ({
+                ...state,
+                errorMessage: action.payload
+            });
+        default:
+            return state;
     }
 }
 

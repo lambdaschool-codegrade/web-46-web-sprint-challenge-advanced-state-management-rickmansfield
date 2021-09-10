@@ -18,8 +18,10 @@ import { fetchSmurfs } from "./actions";
 //     .catch(err => console.log('Axios Error', err));
 //   }
 const App = (props) => {
+  console.log('App.js ln:21 props', props);
   useEffect(()=>{
     props.dispatch(fetchSmurfs());
+    // eslint-disable-next-line
   },[])
   // render() {
     return (
