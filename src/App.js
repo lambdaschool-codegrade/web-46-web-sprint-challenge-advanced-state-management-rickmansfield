@@ -41,6 +41,7 @@ const App = (props) => {
 const mapStateToProps = state => {
   return{
     isLoading: state.isLoading,
+    errorMessage: state.errorMessage,
   }
 }
 

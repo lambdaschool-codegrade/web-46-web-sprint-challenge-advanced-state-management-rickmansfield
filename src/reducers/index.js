@@ -1,6 +1,8 @@
 import {
     START_FETCH_SMURF,
-    SET_VALUE_TO_ERROR_MESSAGE
+    SET_VALUE_TO_ERROR_MESSAGE,
+    SUCCESS_FETCH_SMURF,
+    FAIL_FETCH_SMURF,
 } from "../actions/"
 export const initialState = {
     smurfs: [],
@@ -14,6 +16,18 @@ const reducer = (state = initialState, action) => {
             return ({
                 ...state,
                 isLoading: true
+            });
+        case SUCCESS_FETCH_SMURF:
+            return ({
+                ...state,
+                isLoading: false,
+                smurfs: action.payload
+            });
+        case FAIL_FETCH_SMURF:
+            return ({
+                ...state,
+                dataError: action.type,
+                isLoading: false
             });
         case SET_VALUE_TO_ERROR_MESSAGE:
             return ({

@@ -1,16 +1,27 @@
 import axios from 'axios';
 export const START_FETCH_SMURF = "START_FETCH_SMURF";
 export const SET_VALUE_TO_ERROR_MESSAGE = "SET_VALUE_TO_ERROR_MESSAGE";
+export const SUCCESS_FETCH_SMURF = "SUCCESS_FETCH_SMURF";
+export const FAIL_FETCH_SMURF = "FAIL_FETCH_SMURF";
 
 export const fetchSmurfs = () =>{
     return (dispatch) => {
         dispatch(fetchStart());
+        axios.get("http://localhost:3333/smurfs")
     }
 }
 
 export const fetchStart = () =>{
     return ({type: START_FETCH_SMURF});
 }
+export const fetchSuccess = (smurfs) => {
+    return ({ type: SUCCESS_FETCH_SMURF, payload: smurfs });
+}
+
+export const fetchFail = (err) => {
+    return ({ type: FAIL_FETCH_SMURF, payload: err });
+}
+
 export const setError = (err) => {
     return ({ type: SET_VALUE_TO_ERROR_MESSAGE, payload: err });
 }
