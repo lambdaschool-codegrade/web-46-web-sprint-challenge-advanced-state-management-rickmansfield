@@ -1,5 +1,24 @@
 # Advanced State Management Sprint Challenge
 
+- [Advanced State Management Sprint Challenge](#advanced-state-management-sprint-challenge)
+  - [Introduction](#introduction)
+  - [Instructions](#instructions)
+    - [Task 1: Transfer Repo](#task-1-transfer-repo)
+    - [Task 2: Project Requirements](#task-2-project-requirements)
+      - [reducers/index.js](#reducersindexjs)
+      - [index.js](#indexjs)
+      - [actions/index.js](#actionsindexjs)
+      - [App.js](#appjs)
+      - [components/SmurfList.js](#componentssmurflistjs)
+      - [components/Smurf.js](#componentssmurfjs)
+      - [components/AddForm.js](#componentsaddformjs)
+    - [Task 4: Stretch Goals](#task-4-stretch-goals)
+    - [Reference Materials](#reference-materials)
+      - [Resource: API documentation](#resource-api-documentation)
+        - [GET '/smurfs'](#get-smurfs)
+  - [Submission format](#submission-format)
+  - [Interview Questions](#interview-questions)
+
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
 This challenge allows you to practice the concepts and techniques learned over the past sprint and apply them in a concrete project. This sprint explored **advanced state management**. During this sprint, you studied **the reducer pattern, and redux**. 
