@@ -59,11 +59,11 @@ In this challenge, you are to build a Smurfs village database utilizing Redux as
       - a string indicating a possible error message
 
   * [x] 2. Add in the arguments needed to complete a standard reducer function.
-  * [ ] Add in a reducer case to accommodate the start of a smurf fetch.
-  * [ ] Add in a reducer case to accommodate the successful smurf api fetch.
-  * [ ] Add in a reducer cases to accommodate the failed smurf api fetch.
-  * [ ] Add in a reducer case to accommodate adding a smurf (including the name, nickname, position, description and an internally generated id) into your smurf list.
-  * [ ] Add in a reducer case that adds in a value to the error message.
+  * [x] Add in a reducer case to accommodate the start of a smurf fetch.
+  * [x] Add in a reducer case to accommodate the successful smurf api fetch.
+  * [x] Add in a reducer cases to accommodate the failed smurf api fetch.
+  * [x] Add in a reducer case to accommodate adding a smurf (including the name, nickname, position, description and an internally generated id) into your smurf list.
+  * [x] Add in a reducer case that adds in a value to the error message.
 
 #### index.js
   Connect your application to reducer through redux with the thunk and logger middleware packages attached.
