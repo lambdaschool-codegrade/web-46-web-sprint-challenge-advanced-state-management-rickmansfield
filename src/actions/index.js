@@ -3,12 +3,24 @@ export const START_FETCH_SMURF = "START_FETCH_SMURF";
 export const SET_VALUE_TO_ERROR_MESSAGE = "SET_VALUE_TO_ERROR_MESSAGE";
 export const SUCCESS_FETCH_SMURF = "SUCCESS_FETCH_SMURF";
 export const FAIL_FETCH_SMURF = "FAIL_FETCH_SMURF";
+export const ADD_SMURF = "ADD_SMURF";
 
 export const fetchSmurfs = () =>{
     return (dispatch) => {
         dispatch(fetchStart());
         axios.get("http://localhost:3333/smurfs")
+        .then(res => {
+            // console.log('fetchSmurfs res.data:', res.data);
+            dispatch(fetchSuccess(res.data));
+        })
+        .catch(err => {
+            dispatch(fetchFail(err));
+        });
     }
+}
+
+export const addSmurf = (smurf) => {
+    return ({ type: ADD_SMURF, payload: smurf });
 }
 
 export const fetchStart = () =>{

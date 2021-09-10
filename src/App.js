@@ -1,12 +1,8 @@
 import React, { useEffect} from "react";
-
 import AddForm from './components/AddForm';
 import SmurfList from './components/SmurfList';
 import Header from './components/Header';
 import { connect } from "react-redux";
-
-// import axios from 'axios';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import { fetchSmurfs } from "./actions";
@@ -18,7 +14,7 @@ import { fetchSmurfs } from "./actions";
 //     .catch(err => console.log('Axios Error', err));
 //   }
 const App = (props) => {
-  console.log('App.js ln:21 props', props);
+  // console.log('App.js ln:21 props', props);
   useEffect(()=>{
     props.dispatch(fetchSmurfs());
     // eslint-disable-next-line
@@ -41,6 +37,7 @@ const App = (props) => {
 const mapStateToProps = state => {
   return{
     isLoading: state.isLoading,
+    smurfs: state.smurfs,
     errorMessage: state.errorMessage,
   }
 }

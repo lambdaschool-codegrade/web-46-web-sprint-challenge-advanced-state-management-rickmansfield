@@ -3,11 +3,13 @@ import {
     SET_VALUE_TO_ERROR_MESSAGE,
     SUCCESS_FETCH_SMURF,
     FAIL_FETCH_SMURF,
+    ADD_SMURF
 } from "../actions/"
 export const initialState = {
     smurfs: [],
     isLoading: false,
-    errorMessage: ""
+    errorMessage: "",
+    dataError:""
 }
 
 const reducer = (state = initialState, action) => {
@@ -34,6 +36,12 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 errorMessage: action.payload
             });
+            case ADD_SMURF:
+                return({
+                    ...state,
+                    id: Date.now(),
+                    smurfs: [...state.smurfs, action.payload]
+                })
         default:
             return state;
     }
