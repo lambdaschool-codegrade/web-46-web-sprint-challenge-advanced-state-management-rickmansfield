@@ -18,7 +18,7 @@
         - [GET '/smurfs'](#get-smurfs)
   - [Submission format](#submission-format)
   - [Interview Questions](#interview-questions)
-  - [Rick Mansfield's PUll Req](#rick-mansfields-pull-req)
+  - [Rick Mansfield's Repository Link](#rick-mansfields-repository-link)
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
@@ -189,6 +189,6 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
    1. Well for smaller projects Context API sure does make it easier to convey state. While using prop drilling via function components is a little harder, it's what we learned "frist" so I'm better at it... BUT, now using Redux and Reducers is my favorite. It makes me use less props drilling and hopefully as a result fewer mistakes. But, I don't see myself using class componenets to do this but I'm glad I know how to use both class and functional components. LOL. But, I'd say overall **my favortie is just vannila Function components with Redux and reducers.** It "makes sense" in my head dispite the extra work over Context API measures. Frankly having to learn them all gives me imposter Syndrome. I don't have the best grasp of Context API and my understanding of vanilla class components is weak too. Just about the time I thought I was getting props drilling ... well you know where this is going... we jumped to new material. Was like watering my favorite cocktail down more and more till it was not so good anymore. Sigh... Nonetheless, I'm a Reducer Pattern fan with a new found love of the Redux store and redux-async techniques. 
 
 
-## Rick Mansfield's PUll Req 
+## Rick Mansfield's Repository Link
 
-- [Link]()
+- [Link](https://github.com/rickmansfield/web-46-web-sprint-challenge-advanced-state-management-rickmansfield/tree/rick-mansfield)
