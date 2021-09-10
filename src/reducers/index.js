@@ -1,11 +1,22 @@
-
+import {
+    START_FETCH_SMURF
+} from "../actions/"
 export const initialState = {
     smurfs: [],
     isLoading: false,
     errorMessage: ""
 }
 
-const reducer = ()=>{
+const reducer = (state = initialState, action)=>{
+    switch(action.type){
+        case START_FETCH_SMURF:
+            return({
+                ...state,
+                isLoading: true
+            })
+            default:
+                return state;
+    }
 }
 
 //**************DO NOT EDIT ANY CODE BEYOND THIS POINT**************//
