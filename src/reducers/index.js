@@ -40,7 +40,7 @@ const reducer = (state = initialState, action) => {
             case ADD_SMURF:
                 return({
                     ...state,
-                    id: Date.now(),
+                    // id: Date.now(),
                     smurfs: [...state.smurfs, action.payload]
                 })
         default:
